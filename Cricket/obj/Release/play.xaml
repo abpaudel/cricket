@@ -1,0 +1,760 @@
+﻿<Page
+    x:Class="Cricket.play"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Cricket"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Storyboard x:Name="zero">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-259.697"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-307.473"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="23.888"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="one">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261.19"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-141.79"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="152.236"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="two">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261.19"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-126.865"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-295.519"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="three">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261.19"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="128.353"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="149.25"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="four">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261.19"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="67.16"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-344.768"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="six">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261.19"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-249.283"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-227.556"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-192.098"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-160.938"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-122.243"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="-74.698"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-26.781"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="31.535"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="93.363"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="159.695"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="74.496"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="141.036"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="204.428"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="252.234"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="299.999"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="347.672"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="389.466"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="425.38"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="446.261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="459.69"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="outt">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <DiscreteDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261.249"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-277.249"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-29.333"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="fielder">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ellipse">
+                <EasingDoubleKeyFrame KeyTime="0" Value="398"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="465.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="452"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="467"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ellipse">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-362.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-337"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-287.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-242.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ellipse1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="48"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="7.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="76.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="126"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ellipse2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-227.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-200.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-157"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-182.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ellipse3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-358"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-364"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-352"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-307"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ellipse4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-282"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-244.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ellipse4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="238"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="239.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ellipse4_Copy">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-112.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-52.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-39"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-39"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-72"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ellipse4_Copy">
+                <EasingDoubleKeyFrame KeyTime="0" Value="569"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="599"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="563"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="546.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="561.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ellipse4_Copy1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="184.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="139.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="181.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ellipse4_Copy1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="143.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="211"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="212.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ellipse4_Copy2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="375"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="402"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="448.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="462"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="390"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ellipse4_Copy3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="164"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="105.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="95"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="108.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="171.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ellipse4_Copy3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="361"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="332.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="356.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="401.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="406"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ellipse3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="74"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="140"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="189.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="183.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ellipse2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="64.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="114"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="121.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="78"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ellipse5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-87"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-109.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-64.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="6"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ellipse5">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-126"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-162"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-184.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-154.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ellipse4_Copy2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-31.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="10.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="4.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="58.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="52.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ellipse1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="36"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="57"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="58.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="four1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-307.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-385.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="four2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-441"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="285"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="four3">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="4.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="405"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="four4">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="207"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="97.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="four5">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-484.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-220.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="one1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-141"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-141"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="one2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-316.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="136.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="one3">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-367.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-109.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="one4">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="45"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="78"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="one5">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-379.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="30"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="two1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-172.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="259.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="two2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-295.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-229.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="two3">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="24"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-202.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="two4">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="24"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="162"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="two5">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-270"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="210"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="three1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-195"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="366"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="three2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="15"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-297"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="three3">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-126"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="373.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="three4">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-480"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="57"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="three5">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-154.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-370.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="six1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261.19"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-256.79"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-250.102"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-231.058"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-210.421"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-183.743"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="-154.241"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-110.898"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="-67.412"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="-14.59"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="42.379"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-71.004"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-137.997"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-186.862"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-227.759"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-262.501"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="-285.466"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-312.823"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="-332.128"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="-353.251"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="-377.236"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="six2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261.19"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-279.291"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-299.607"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-319.56"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-339.39"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-356.243"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="-370.278"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-378.003"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="-374.895"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="-359.666"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="-326.621"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-30.487"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-71.929"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-107.406"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-145.315"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-180.001"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="-220.919"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-270.71"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="-317.197"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="-359.261"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="-393.736"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="six3">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261.19"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-235.795"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-199.096"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-156.168"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-96.394"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-29.243"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="36.225"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="99.001"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="144.376"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="178.973"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="210.379"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-54.469"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-86.907"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-122.447"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-157.323"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-174.001"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="-172.909"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-159.686"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="-134.095"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="-108.692"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="-77.236"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="six4">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261.19"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-238.801"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-203.615"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-150.137"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-91.881"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-44.243"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="16.705"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="73.47"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="123.386"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="165.481"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="210.379"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="62.544"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="97.666"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="135.694"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="165.259"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="179.999"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="184.177"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="179.308"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="170.547"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="156.866"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="126.764"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="six5">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-261.19"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-270.267"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-277.149"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-277.607"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-264.566"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-251.243"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="-218.74"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-181.673"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="-140.593"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="-77.908"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="-22.121"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="ball">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="53.578"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="121.612"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="180.737"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="237.213"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="295.499"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="347.672"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="380.39"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="413.54"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="433.077"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="447.764"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="disableanim">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="runs">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.6">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="overs">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.6">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="runrate">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.6">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="info">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.6">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="wickets">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.6">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="playnext">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.6">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="prring">
+                <DiscreteObjectKeyFrame KeyTime="0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.6">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
+
+    <Grid x:Name="playbg">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF18A094" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Ellipse HorizontalAlignment="Left" Height="700" Margin="30,31,0,0" Stroke="Black" VerticalAlignment="Top" Width="798" Fill="#FF159E0F"/>
+        <Rectangle HorizontalAlignment="Left" Height="246" Margin="390,258,0,0" Stroke="Black" VerticalAlignment="Top" Width="78" Fill="#FFDAEC8D"/>
+        <Button x:ConnectionId='1' x:Name="playnext" Content="Play" HorizontalAlignment="Left" Height="97" Margin="981,480,0,0" VerticalAlignment="Top" Width="165" FontSize="50"                       />
+        <TextBlock x:Name="runs" HorizontalAlignment="Left" Height="64" Margin="794,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" FontSize="50" Text="0"/>
+        <TextBlock HorizontalAlignment="Left" Height="41" Margin="788,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128">
+        	<Run FontSize="26" Text="Total Runs"/>
+        </TextBlock>
+        <TextBlock x:Name="overs" HorizontalAlignment="Left" Height="64" Margin="922,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" FontSize="50" Text="0.0" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="41" Margin="940,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128">
+        	<Run FontSize="26" Text="Overs"/>
+        </TextBlock>
+        <TextBlock x:Name="runrate" HorizontalAlignment="Left" Height="64" Margin="1059,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97" FontSize="50" Text="0.0"/>
+        <TextBlock HorizontalAlignment="Left" Height="41" Margin="1053,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128">
+        	<Run FontSize="26" Text="Run Rate"/>
+        </TextBlock>
+        <TextBlock x:Name="info" FontSize="70" HorizontalAlignment="Left" Height="200" Margin="852,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="487" TextAlignment="Center">
+
+        </TextBlock>
+        <Ellipse x:Name="ball" Fill="#FF8B2B07" HorizontalAlignment="Left" Height="12" Margin="421,531,0,0" Stroke="Black" VerticalAlignment="Top" Width="12" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <TextBlock x:Name="wickets" HorizontalAlignment="Left" Height="64" Margin="1191,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" FontSize="50" Text="0"/>
+        <TextBlock HorizontalAlignment="Left" Height="41" Margin="1185,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128">
+        	<Run FontSize="26" Text="Wickets"/>
+        </TextBlock>
+        <Button x:ConnectionId='2' x:Name="viewresult" Content="View results" HorizontalAlignment="Left" Height="96" Margin="849,582,0,0" VerticalAlignment="Top" Width="453" FontSize="35"                          Visibility="Collapsed"/>
+        <Ellipse x:Name="ellipse5" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="178,484,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="ellipse" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="178,484,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="ellipse1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="178,484,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="ellipse2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="178,484,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="ellipse3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="178,484,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="ellipse4" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="178,484,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="ellipse4_Copy" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="178,484,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="ellipse4_Copy1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="178,484,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="ellipse4_Copy2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="178,484,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse x:Name="ellipse4_Copy3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="178,484,0,0" Stroke="Black" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <CompositeTransform/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="414,265,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="414,496,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
+        <AppBar Height="110" Margin="-2,660,-2,-2" VerticalAlignment="Top">
+            <Button x:ConnectionId='4' x:Name="retbut" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Content="Main Menu" BorderThickness="0" Margin="40,0,0,0"                     />
+
+        </AppBar>
+        <TextBlock x:Name="targetcap" HorizontalAlignment="Left" Height="35" Margin="792,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85">
+        	<Run FontSize="25.25" Text="Target:"/>
+        </TextBlock>
+        <TextBlock x:Name="targetbox" HorizontalAlignment="Left" Height="50" Margin="882,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="50" Foreground="#FFEC7C7C"/>
+        <Button x:ConnectionId='3' x:Name="nexthalf" Content="Play 2nd Innings" HorizontalAlignment="Left" Height="80" Margin="862,612,0,0" VerticalAlignment="Top" Width="396" FontSize="45"                        Visibility="Collapsed"/>
+        <ProgressRing x:Name="prring" HorizontalAlignment="Left" Height="110" Margin="1005,275,0,0" VerticalAlignment="Top" Width="110" IsActive="True" Foreground="White" Visibility="Collapsed"/>
+
+    </Grid>
+</Page>
+

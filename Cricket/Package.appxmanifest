@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="44768AbhishekPaudel.Kirket" Publisher="CN=A5CD56AD-BB34-4BDF-BA60-B0D2F76A2D9B" Version="1.1.0.1" />
+  <Properties>
+    <DisplayName>Kirket</DisplayName>
+    <PublisherDisplayName>Abhishek Paudel</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Cricket.App">
+      <m2:VisualElements DisplayName="Kirket" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="A simple, yet very interesting Cricket game. Play and you'll know it!" ForegroundText="light" BackgroundColor="#0099ff">
+        <m2:DefaultTile ShortName="Kirket" Wide310x150Logo="Assets\Wide tile.png">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+            <m2:ShowOn Tile="wide310x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#0099ff" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+</Package>

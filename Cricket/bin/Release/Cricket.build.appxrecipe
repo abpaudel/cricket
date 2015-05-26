@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MYHEARTSWIFT-PC</Machine>
+    <WindowsUser>myheartswift</WindowsUser>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>44768AbhishekPaudel.Kirket</PackageIdentityName>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\bin\Release\Cricket.exe">
+      <PackagePath>Cricket.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\Assets\logo1.png">
+      <PackagePath>Assets\logo1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\Assets\Wide tile.scale-100.png">
+      <PackagePath>Assets\Wide tile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\bin\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\bin\Release\about.xbf">
+      <PackagePath>about.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\bin\Release\batfirst.xbf">
+      <PackagePath>batfirst.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\bin\Release\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\bin\Release\play.xbf">
+      <PackagePath>play.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\bin\Release\resultpage.xbf">
+      <PackagePath>resultpage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\bin\Release\secondinn.xbf">
+      <PackagePath>secondinn.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\documents\visual studio 2013\Projects\Cricket\Cricket\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MYHEARTSWIFT-PC</Machine>
+    <WindowsUser>myheartswift</WindowsUser>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>25a5fe64-29e7-4e2c-915a-2cc83c86c641</PackageIdentityName>
+    <RegisteredManifestChecksum>AF5BD20D7E8ACA06F89E497192B5AE4EC1111ED69210832A9D78E40686264967</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>25a5fe64-29e7-4e2c-915a-2cc83c86c641_1.0.0.0_neutral__t2mrbjjvzbekw</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>25a5fe64-29e7-4e2c-915a-2cc83c86c641_t2mrbjjvzbekw!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>25a5fe64-29e7-4e2c-915a-2cc83c86c641</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=myheartswift</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-07-02T16:59:04.437</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\bin\Release\Cricket.exe">
+      <PackagePath>Cricket.exe</PackagePath>
+      <Modified>2014-07-02T16:59:02.809</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-05-20T15:03:54.859</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\Assets\logo1.png">
+      <PackagePath>Assets\logo1.png</PackagePath>
+      <Modified>2014-05-20T15:00:54.669</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-05-20T15:08:18.887</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-05-20T15:05:45.494</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-05-20T15:07:35.191</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\Assets\Wide tile.scale-100.png">
+      <PackagePath>Assets\Wide tile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-05-22T23:21:16.579</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\bin\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-05-31T08:08:47.889</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\bin\Release\about.xbf">
+      <PackagePath>about.xbf</PackagePath>
+      <Modified>2014-05-31T08:08:47.889</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\bin\Release\batfirst.xbf">
+      <PackagePath>batfirst.xbf</PackagePath>
+      <Modified>2014-05-31T08:08:47.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\bin\Release\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-05-31T08:08:47.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\bin\Release\play.xbf">
+      <PackagePath>play.xbf</PackagePath>
+      <Modified>2014-05-31T08:08:47.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\bin\Release\resultpage.xbf">
+      <PackagePath>resultpage.xbf</PackagePath>
+      <Modified>2014-05-31T08:08:47.891</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\bin\Release\secondinn.xbf">
+      <PackagePath>secondinn.xbf</PackagePath>
+      <Modified>2014-05-31T08:08:47.891</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Documents\Visual Studio 2013\Projects\Cricket\Cricket\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-07-02T16:59:03.508</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
